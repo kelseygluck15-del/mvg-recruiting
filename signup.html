@@ -8,14 +8,14 @@
         :root { --primary: #0f172a; --accent: #0d9488; --light: #f8fafc; }
         body { font-family: 'Inter', sans-serif; background: var(--light); padding: 40px; }
         .container { max-width: 500px; margin: auto; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
-        input { width: 100%; padding: 12px; margin-bottom: 20px; border: 1px solid #e2e8f0; border-radius: 8px; }
+        input { width: 100%; padding: 14px; margin-bottom: 20px; border: 1px solid #e2e8f0; border-radius: 8px; box-sizing: border-box; }
         .btn { background: var(--primary); color: white; padding: 18px; border: none; width: 100%; border-radius: 8px; font-weight: 800; cursor: pointer; }
     </style>
 </head>
 <body>
 <div class="container">
-    <h1>Join the Panel</h1>
-    <p>Sign up for our national database.</p>
+    <h1 style="color:var(--primary); letter-spacing:-1px;">Join the National Panel</h1>
+    <p style="color:#64748b; margin-bottom:30px;">Get notified of future research studies.</p>
     <form action="https://formspree.io/f/xgolweoo" method="POST">
         <input type="text" name="name" placeholder="Full Name" required>
         <input type="email" name="email" placeholder="Email Address" required>
