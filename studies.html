@@ -7,9 +7,10 @@
     <style>
         :root { --primary: #0f172a; --accent: #0d9488; --light: #f8fafc; }
         body { font-family: 'Inter', sans-serif; margin: 0; background: var(--light); color: #334155; padding-bottom: 60px; }
-        header { background: #fff; padding: 1.2rem 5%; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-weight: 800; font-size: 1.25rem; color: var(--primary); text-decoration: none; text-transform: uppercase; }
-        nav a { margin-left: 20px; text-decoration: none; color: #64748b; font-size: 0.9rem; font-weight: 600; }
+        header { background: #fff; padding: 1.2rem 5%; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        .logo { font-weight: 800; font-size: 1.25rem; color: var(--primary); text-decoration: none; text-transform: uppercase; letter-spacing: 1px; }
+        nav a { margin-left: 20px; text-decoration: none; color: #64748b; font-size: 0.9rem; font-weight: 600; transition: 0.3s; }
+        nav a:hover { color: var(--accent); }
         .container { max-width: 700px; margin: 50px auto; padding: 40px; background: white; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
         .study-banner { background: #f1f5f9; border-left: 4px solid var(--accent); padding: 20px; margin-bottom: 30px; border-radius: 0 8px 8px 0; }
         label { display: block; font-weight: 600; margin-bottom: 10px; color: var(--primary); }
@@ -22,7 +23,12 @@
 <body>
 <header>
     <a href="index.html" class="logo">MVG RECRUITING</a>
-    <nav><a href="index.html">Home</a><a href="about.html">About</a><a href="faq.html">FAQ</a></nav>
+    <nav>
+        <a href="about.html">About</a>
+        <a href="clients.html">Client Services</a>
+        <a href="faq.html">FAQ</a>
+        <a href="studies.html">Current Studies</a>
+    </nav>
 </header>
 <div class="container">
     <h1>Application Questionnaire</h1>
@@ -34,10 +40,16 @@
         <label>Full Name</label><input type="text" name="name" required placeholder="Enter your full name">
         <label>Occupation</label><input type="text" name="occupation" required placeholder="What is your current job?">
         <label>Gwinnett County Resident?</label>
-        <select name="resident" required><option value="">Select an option...</option><option value="yes">Yes, I live in Gwinnett</option><option value="no">No</option></select>
+        <select name="resident" required>
+            <option value="">Select an option...</option>
+            <option value="yes">Yes, I live in Gwinnett</option>
+            <option value="no">No</option>
+        </select>
         <div style="background: #f8fafc; padding: 15px; border-radius: 8px; margin-bottom: 25px; border: 1px solid #e2e8f0; display: flex; align-items: flex-start; gap: 12px;">
             <input type="checkbox" required id="privacy" style="width: auto; margin-top: 5px; cursor: pointer;">
-            <label for="privacy" style="font-weight: 400; font-size: 0.9rem; color: #64748b; margin-bottom: 0;">I agree to the <a href="#" onclick="document.getElementById('privacyModal').style.display='flex'; return false;" style="color: var(--accent); font-weight: 700; text-decoration: none;">MVG Privacy Policy</a></label>
+            <label for="privacy" style="font-weight: 400; font-size: 0.9rem; color: #64748b; margin-bottom: 0;">
+                I agree to the <a href="#" onclick="document.getElementById('privacyModal').style.display='flex'; return false;" style="color: var(--accent); font-weight: 700; text-decoration: none;">MVG Privacy Policy</a>
+            </label>
         </div>
         <input type="hidden" name="_next" value="https://kelseygluck15-del.github.io/mvg-recruiting/success.html">
         <button type="submit" class="btn">Submit Application</button>
@@ -45,8 +57,8 @@
 </div>
 <div id="privacyModal"><div class="modal-content">
     <h2 style="margin-top: 0; color: var(--primary);">Privacy Policy</h2>
-    <p style="color: #64748b; font-size: 0.95rem; line-height: 1.6;">MVG Recruiting collects this data exclusively for eligibility screening for the research study on Feb 10, 2026. Your information is secure and never sold.</p>
-    <button onclick="document.getElementById('privacyModal').style.display='none'" style="background: var(--primary); color: white; padding: 12px 24px; border: none; border-radius: 6px; cursor: pointer; width: 100%; font-weight: 700;">I Understand</button>
+    <p style="color: #64748b; font-size: 0.95rem; line-height: 1.6;">MVG Recruiting collects this data exclusively for eligibility screening for our research studies. Your information is kept secure and is never sold to third parties.</p>
+    <button onclick="document.getElementById('privacyModal').style.display='none'" style="background: var(--primary); color: white; padding: 12px 24px; border: none; border-radius: 6px; cursor: pointer; width: 100%; font-weight: 700; margin-top: 20px;">I Understand</button>
 </div></div>
 </body>
 </html>
