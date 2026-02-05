@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Services | MVG Recruiting</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary: #0f172a; --accent: #0d9488; --light: #f8fafc; }
+        body { font-family: 'Inter', sans-serif; margin: 0; background: var(--light); color: #334155; line-height: 1.6; }
+        
+        header { background: #fff; padding: 1.2rem 5%; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-weight: 800; font-size: 1.25rem; color: var(--primary); text-decoration: none; text-transform: uppercase; }
+        nav a { margin-left: 20px; text-decoration: none; color: #64748b; font-size: 0.9rem; font-weight: 600; }
+
+        .hero-mini { background: var(--primary); color: white; padding: 80px 10%; text-align: center; }
+        .hero-mini h1 { font-size: 2.5rem; letter-spacing: -1.5px; margin: 0; }
+
+        .container { max-width: 1100px; margin: 60px auto; padding: 0 20px; }
+        
+        /* Service Blocks */
+        .service-row { display: flex; gap: 50px; align-items: center; margin-bottom: 80px; flex-wrap: wrap; }
+        .service-row:nth-child(even) { flex-direction: row-reverse; }
+        .service-text { flex: 1; min-width: 300px; }
+        .service-text h2 { color: var(--primary); font-size: 2rem; margin-bottom: 20px; border-left: 4px solid var(--accent); padding-left: 20px; }
+        .service-image { flex: 1; min-width: 300px; border-radius: 12px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .service-image img { width: 100%; display: block; filter: grayscale(20%); }
+
+        .capability-tags { display: flex; gap: 10px; margin-top: 20px; flex-wrap: wrap; }
+        .tag { background: #f1f5f9; color: #475569; padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; }
+
+        .cta-box { background: #f1f5f9; padding: 50px; border-radius: 16px; text-align: center; margin-top: 50px; }
+        .btn { background: var(--accent); color: white; padding: 18px 32px; border-radius: 8px; text-decoration: none; font-weight: 800; display: inline-block; }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">MVG RECRUITING</a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+    </nav>
+</header>
+
+<section class="hero-mini">
+    <h1>Strategic Research Solutions</h1>
+    <p style="color: var(--accent); font-weight: 600;">Customized Recruitment for the Legal & Corporate Sectors</p>
+</section>
+
+<div class="container">
+    <div class="service-row">
+        <div class="service-text">
+            <h2>Mock Jury Recruitment</h2>
+            <p>Our flagship service. We specialize in mirroring the specific jury pool of your venue, ensuring that your mock trial results are statistically relevant and strategically actionable.</p>
+            <div class="capability-tags">
+                <span class="tag">Venue Matching</span>
+                <span class="tag">Demographic Balancing</span>
+                <span class="tag">Conflict Screening</span>
+            </div>
+        </div>
+        <div class="service-image">
+            <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=800" alt="Legal Gavel">
+        </div>
+    </div>
+
+    <div class="service-row">
+        <div class="service-text">
+            <h2>Focus Groups</h2>
+            <p>Gain deep qualitative insights into brand perception, witness credibility, or narrative testing. We handle the logistics, the venue, and the vetted participants so you can focus on the research.</p>
+            <div class="capability-tags">
+                <span class="tag">Narrative Testing</span>
+                <span class="tag">Witness Prep</span>
+                <span class="tag">Consumer Insights</span>
+            </div>
+        </div>
+        <div class="service-image">
+            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=800" alt="Meeting Room">
+        </div>
+    </div>
+
+    <div class="service-row">
+        <div class="service-text">
+            <h2>Project Management</h2>
+            <p>From nationwide taste tests to high-level executive interviews, our 30 years of experience allows us to manage complex, multi-city recruitment projects with surgical precision.</p>
+            <div class="capability-tags">
+                <span class="tag">Nationwide Logistics</span>
+                <span class="tag">In-Person & Remote</span>
+                <span class="tag">On-Site Supervision</span>
+            </div>
+        </div>
+        <div class="service-image">
+            <img src="https://images.unsplash.com/photo-1454165833762-0264b2849183?auto=format&fit=crop&q=80&w=800" alt="Office Work">
+        </div>
+    </div>
+
+    <div class="cta-box">
+        <h2>Ready to start your next project?</h2>
+        <p>Contact our project coordination team for a custom quote and venue availability.</p>
+        <a href="mailto:info@mvgrecruiting.com" class="btn">Request a Proposal</a>
+    </div>
+</div>
+
+<footer style="text-align:center; padding: 40px; color: #94a3b8;">
+    &copy; 2026 MVG Recruiting | Nationwide Excellence
+</footer>
+
+</body>
+</html>
