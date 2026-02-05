@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Current Studies | MVG Recruiting</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
@@ -10,62 +9,44 @@
         body { font-family: 'Inter', sans-serif; margin: 0; background: var(--light); color: #334155; padding-bottom: 60px; }
         header { background: #fff; padding: 1.2rem 5%; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center; }
         .logo { font-weight: 800; font-size: 1.25rem; color: var(--primary); text-decoration: none; text-transform: uppercase; }
+        nav a { margin-left: 20px; text-decoration: none; color: #64748b; font-size: 0.9rem; font-weight: 600; }
         .container { max-width: 700px; margin: 50px auto; padding: 40px; background: white; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
         .study-banner { background: #f1f5f9; border-left: 4px solid var(--accent); padding: 20px; margin-bottom: 30px; border-radius: 0 8px 8px 0; }
         label { display: block; font-weight: 600; margin-bottom: 10px; color: var(--primary); }
         input, select { width: 100%; padding: 14px; border: 1px solid #cbd5e1; border-radius: 8px; margin-bottom: 25px; box-sizing: border-box; }
         .btn { background: var(--accent); color: white; padding: 20px; border: none; border-radius: 8px; font-weight: 800; width: 100%; cursor: pointer; font-size: 1.1rem; }
-        
-        /* Modal styling */
         #privacyModal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.9); z-index: 1001; align-items: center; justify-content: center; padding: 20px; }
         .modal-content { background: white; width: 100%; max-width: 500px; padding: 40px; border-radius: 16px; position: relative; }
     </style>
 </head>
 <body>
-
-<header><a href="index.html" class="logo">MVG RECRUITING</a></header>
-
+<header>
+    <a href="index.html" class="logo">MVG RECRUITING</a>
+    <nav><a href="index.html">Home</a><a href="about.html">About</a><a href="faq.html">FAQ</a></nav>
+</header>
 <div class="container">
     <h1>Application Questionnaire</h1>
-    
     <div class="study-banner">
         <h2 style="margin:0; color:var(--accent); font-size:1.1rem;">ACTIVE STUDY: GWINNETT COUNTY RESEARCH</h2>
         <p style="margin:8px 0 0; font-weight:600; font-size:1.1rem;">Lawrenceville, GA • Feb 10, 2026 • $325 Compensation</p>
     </div>
-
     <form action="https://formspree.io/f/mzdapelo" method="POST">
-        <label>Full Name</label>
-        <input type="text" name="name" required placeholder="Enter your full name">
-
-        <label>Occupation</label>
-        <input type="text" name="occupation" required placeholder="What is your current job?">
-
+        <label>Full Name</label><input type="text" name="name" required placeholder="Enter your full name">
+        <label>Occupation</label><input type="text" name="occupation" required placeholder="What is your current job?">
         <label>Gwinnett County Resident?</label>
-        <select name="resident" required>
-            <option value="">Select an option...</option>
-            <option value="yes">Yes, I live in Gwinnett</option>
-            <option value="no">No</option>
-        </select>
-
+        <select name="resident" required><option value="">Select an option...</option><option value="yes">Yes, I live in Gwinnett</option><option value="no">No</option></select>
         <div style="background: #f8fafc; padding: 15px; border-radius: 8px; margin-bottom: 25px; border: 1px solid #e2e8f0; display: flex; align-items: flex-start; gap: 12px;">
             <input type="checkbox" required id="privacy" style="width: auto; margin-top: 5px; cursor: pointer;">
-            <label for="privacy" style="font-weight: 400; font-size: 0.9rem; color: #64748b; margin-bottom: 0;">
-                I agree to the <a href="#" onclick="document.getElementById('privacyModal').style.display='flex'; return false;" style="color: var(--accent); font-weight: 700; text-decoration: none;">MVG Privacy Policy</a> and confirm my information is accurate.
-            </label>
+            <label for="privacy" style="font-weight: 400; font-size: 0.9rem; color: #64748b; margin-bottom: 0;">I agree to the <a href="#" onclick="document.getElementById('privacyModal').style.display='flex'; return false;" style="color: var(--accent); font-weight: 700; text-decoration: none;">MVG Privacy Policy</a></label>
         </div>
-
         <input type="hidden" name="_next" value="https://kelseygluck15-del.github.io/mvg-recruiting/success.html">
         <button type="submit" class="btn">Submit Application</button>
     </form>
 </div>
-
-<div id="privacyModal">
-    <div class="modal-content">
-        <h2 style="margin-top: 0; color: var(--primary); letter-spacing: -1px;">Privacy Policy</h2>
-        <p style="color: #64748b; font-size: 0.95rem; line-height: 1.6;">MVG Recruiting collects this data exclusively for eligibility screening for the research study on Feb 10, 2026. Your personal information is kept secure and is never sold or shared with outside marketing firms. By submitting this form, you consent to being contacted by an MVG coordinator regarding this specific project.</p>
-        <button onclick="document.getElementById('privacyModal').style.display='none'" style="background: var(--primary); color: white; padding: 12px 24px; border: none; border-radius: 6px; cursor: pointer; width: 100%; font-weight: 700; margin-top: 20px;">I Understand</button>
-    </div>
-</div>
-
+<div id="privacyModal"><div class="modal-content">
+    <h2 style="margin-top: 0; color: var(--primary);">Privacy Policy</h2>
+    <p style="color: #64748b; font-size: 0.95rem; line-height: 1.6;">MVG Recruiting collects this data exclusively for eligibility screening for the research study on Feb 10, 2026. Your information is secure and never sold.</p>
+    <button onclick="document.getElementById('privacyModal').style.display='none'" style="background: var(--primary); color: white; padding: 12px 24px; border: none; border-radius: 6px; cursor: pointer; width: 100%; font-weight: 700;">I Understand</button>
+</div></div>
 </body>
 </html>
