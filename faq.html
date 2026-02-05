@@ -1,91 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ | MVG Recruiting</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
         :root { --primary: #0f172a; --accent: #0d9488; --light: #f8fafc; }
         body { font-family: 'Inter', sans-serif; margin: 0; background: var(--light); color: #334155; line-height: 1.6; }
-        
-        /* Navigation */
-        header { background: #fff; padding: 1.2rem 5%; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center; }
+        header { background: #fff; padding: 1.2rem 5%; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
         .logo { font-weight: 800; font-size: 1.25rem; color: var(--primary); text-decoration: none; text-transform: uppercase; }
         nav a { margin-left: 20px; text-decoration: none; color: #64748b; font-size: 0.9rem; font-weight: 600; }
-
         .container { max-width: 900px; margin: 60px auto; padding: 0 20px; }
         h1 { font-size: 3rem; letter-spacing: -2px; text-align: center; color: var(--primary); margin-bottom: 50px; }
-        
         .faq-grid { display: grid; gap: 20px; }
-        .faq-item { background: white; padding: 35px; border-radius: 16px; box-shadow: 0 4px 20px rgba(15, 23, 42, 0.03); border: 1px solid #e2e8f0; transition: 0.3s; }
-        .faq-item:hover { border-color: var(--accent); transform: translateY(-2px); }
-        .faq-item h3 { color: var(--accent); margin-top: 0; font-size: 1.2rem; letter-spacing: -0.5px; margin-bottom: 15px; }
-        .faq-item p { margin-bottom: 0; color: #64748b; }
-
+        .faq-item { background: white; padding: 35px; border-radius: 16px; box-shadow: 0 4px 20px rgba(15, 23, 42, 0.03); border: 1px solid #e2e8f0; }
+        .faq-item h3 { color: var(--accent); margin-top: 0; font-size: 1.2rem; margin-bottom: 15px; }
         footer { text-align: center; padding: 60px; color: #94a3b8; font-size: 0.9rem; }
     </style>
 </head>
 <body>
-
 <header>
     <a href="index.html" class="logo">MVG RECRUITING</a>
     <nav>
-        <a href="index.html">Home</a>
         <a href="about.html">About</a>
+        <a href="clients.html">Client Services</a>
+        <a href="faq.html">FAQ</a>
         <a href="studies.html">Current Studies</a>
     </nav>
 </header>
-
 <div class="container">
     <h1>Common Questions</h1>
-    
     <div class="faq-grid">
-        <div class="faq-item">
-            <h3>Is this a scam? Why do you need my info?</h3>
-            <p>Absolutely not. MVG Recruiting has been a trusted name in legal research for over 30 years. We collect demographic info only to ensure we have a diverse mix of people for our studies, as required by our clients. We never ask you for money; we pay you.</p>
-        </div>
-
-        <div class="faq-item">
-            <h3>How do I know if I'm selected?</h3>
-            <p>After you fill out a questionnaire, our coordinators review the responses. If you are a match, we will call or email you for a brief phone screening. Due to high volume, we only contact those who move to the next stage.</p>
-        </div>
-
-        <div class="faq-item">
-            <h3>What happens during a "Mock Jury" session?</h3>
-            <p>You will listen to presentations from real attorneys about an upcoming case. You'll then participate in a group discussion (deliberation) to provide your honest thoughts and feedback. It’s a fascinating look into the legal system!</p>
-        </div>
-
-        <div class="faq-item">
-            <h3>What is the time commitment?</h3>
-            <p>Most studies last between 4 to 8 hours. We always provide the exact timeframe in the study description before you sign up so you can plan your schedule accordingly.</p>
-        </div>
-
-        <div class="faq-item">
-            <h3>How and when do I get paid?</h3>
-            <p>Payment is usually issued immediately following the completion of the study. Depending on the project, this could be via check, digital payment (like Venmo or Zelle), or a pre-paid card.</p>
-        </div>
-
-        <div class="faq-item">
-            <h3>Do I need legal experience?</h3>
-            <p>No! In fact, we usually look for people who are NOT lawyers or legal professionals. We want the perspectives of everyday citizens from all walks of life.</p>
-        </div>
-
-        <div class="faq-item">
-            <h3>What should I wear to a session?</h3>
-            <p>Business casual is the standard. We want you to be comfortable but professional, as these sessions often take place in law offices or boardroom settings.</p>
-        </div>
-
-        <div class="faq-item">
-            <h3>Is my information kept private?</h3>
-            <p>Yes. Your personal contact information is used only by MVG coordinators. Your individual opinions during a study are kept confidential and are used by legal teams for research purposes only.</p>
-        </div>
+        <div class="faq-item"><h3>Is this a scam?</h3><p>Absolutely not. We have been a trusted name in legal research for over 30 years. We never ask you for money; we pay you for your time.</p></div>
+        <div class="faq-item"><h3>How do I know if I'm selected?</h3><p>If you match a study profile, a coordinator will reach out via phone or email for a brief screening interview.</p></div>
+        <div class="faq-item"><h3>What is a Mock Jury?</h3><p>A mock jury is a research session where you listen to legal arguments and provide feedback to help attorneys prepare for trial.</p></div>
+        <div class="faq-item"><h3>How do I get paid?</h3><p>Payment is issued immediately after the study via check, digital payment, or pre-paid card.</p></div>
+        <div class="faq-item"><h3>Do I need experience?</h3><p>No. We want the perspectives of everyday citizens from all backgrounds.</p></div>
+        <div class="faq-item"><h3>Is my data private?</h3><p>Yes. Your contact information is never sold and is used only for study recruitment purposes.</p></div>
     </div>
 </div>
-
-<footer>
-    <p>&copy; 2026 MVG Recruiting | Nationwide Excellence</p>
-</footer>
-
+<footer><p>&copy; 2026 MVG Recruiting | Nationwide Excellence</p></footer>
 </body>
 </html>
