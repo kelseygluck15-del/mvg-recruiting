@@ -1,30 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | MVG Recruiting</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story | MVG Recruiting</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
         :root { --primary: #0f172a; --accent: #0d9488; --light: #f8fafc; }
-        body { font-family: 'Inter', sans-serif; margin: 0; background: var(--light); color: #334155; line-height: 1.6; }
+        body { font-family: 'Inter', sans-serif; margin: 0; background: var(--light); color: #334155; line-height: 1.8; }
+        
+        /* Navigation */
         header { background: #fff; padding: 1.2rem 5%; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-weight: 800; font-size: 1.25rem; color: var(--primary); text-decoration: none; text-transform: uppercase; }
-        .content { max-width: 800px; margin: 60px auto; padding: 40px; background: white; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
-        h1 { color: var(--primary); font-size: 2.5rem; letter-spacing: -1.5px; }
-        .highlight { background: #f1f5f9; padding: 25px; border-left: 4px solid var(--accent); margin: 30px 0; border-radius: 0 8px 8px 0; }
+        .logo { font-weight: 800; font-size: 1.25rem; color: var(--primary); text-decoration: none; text-transform: uppercase; letter-spacing: 1px; }
+        nav a { margin-left: 20px; text-decoration: none; color: #64748b; font-size: 0.9rem; font-weight: 600; }
+
+        /* Mega Header */
+        .about-hero { background: var(--primary); color: white; padding: 100px 10%; text-align: center; }
+        .about-hero h1 { font-size: 3rem; letter-spacing: -2px; margin: 0; }
+        .about-hero p { color: var(--accent); font-weight: 600; text-transform: uppercase; letter-spacing: 2px; margin-top: 10px; }
+
+        .content-section { max-width: 900px; margin: -50px auto 100px; background: white; padding: 60px; border-radius: 16px; box-shadow: 0 20px 40px rgba(0,0,0,0.05); }
+        
+        /* Stats Grid */
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; margin: 40px 0; border-top: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0; padding: 40px 0; }
+        .stat-item { text-align: center; }
+        .stat-number { display: block; font-size: 2.5rem; font-weight: 800; color: var(--accent); }
+        .stat-label { font-size: 0.9rem; font-weight: 600; color: #64748b; text-transform: uppercase; }
+
+        /* Bill of Rights Box */
+        .rights-box { background: #f1f5f9; padding: 40px; border-radius: 12px; border-left: 6px solid var(--accent); margin-top: 50px; }
+        .rights-box h3 { margin-top: 0; color: var(--primary); font-size: 1.5rem; }
+        .rights-list { list-style: none; padding: 0; }
+        .rights-list li { margin-bottom: 15px; padding-left: 30px; position: relative; }
+        .rights-list li::before { content: '✓'; position: absolute; left: 0; color: var(--accent); font-weight: 800; }
+
+        footer { text-align: center; padding: 60px; color: #94a3b8; font-size: 0.9rem; }
+        .btn { background: var(--accent); color: white; padding: 16px 32px; border-radius: 8px; text-decoration: none; font-weight: 800; display: inline-block; transition: 0.3s; margin-top: 30px; }
     </style>
 </head>
 <body>
-<header><a href="index.html" class="logo">MVG RECRUITING</a></header>
-<div class="content">
+
+<header>
+    <a href="index.html" class="logo">MVG RECRUITING</a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="studies.html">Current Studies</a>
+        <a href="signup.html">Join Panel</a>
+    </nav>
+</header>
+
+<section class="about-hero">
     <h1>Our 30-Year Legacy</h1>
-    <p>MVG Recruiting has been a leader in national participant recruitment for over three decades. We specialize in finding articulate, qualified individuals for mock juries and high-level market research.</p>
-    <div class="highlight">
-        <h3>The Participant Bill of Rights</h3>
-        <p>We are committed to data privacy, fair compensation, and professional respect for every member of our 100,000+ national panel.</p>
+    <p>Excellence in Participant Recruitment</p>
+</section>
+
+<div class="content-section">
+    <p style="font-size: 1.2rem;">Since the early 1990s, MVG Recruiting has served as a bridge between the legal community and the general public. We don't just find participants; we find the <strong>articulate, honest, and diverse voices</strong> that trial lawyers and market researchers depend on.</p>
+
+    <div class="stats-grid">
+        <div class="stat-item">
+            <span class="stat-number">30+</span>
+            <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number">100k+</span>
+            <span class="stat-label">National Panelists</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number">50</span>
+            <span class="stat-label">States Covered</span>
+        </div>
     </div>
-    <p>Our expertise allows legal teams to gain the critical insights they need for high-stakes litigation.</p>
-    <a href="studies.html" style="color: var(--accent); font-weight: 800; text-decoration: none;">View Current Studies &rarr;</a>
+
+    <h2>National Reach. Personal Touch.</h2>
+    <p>Whether you need a mock jury in Gwinnett County, Georgia, or a focus group in Seattle, Washington, our team uses a rigorous multi-step vetting process to ensure every participant meets your exact demographic and psychological profile.</p>
+
+    <div class="rights-box">
+        <h3>The Participant Bill of Rights</h3>
+        <ul class="rights-list">
+            <li><strong>Data Privacy:</strong> We never sell your personal information to third-party marketers.</li>
+            <li><strong>Fair Pay:</strong> We advocate for competitive compensation for your time and insights.</li>
+            <li><strong>Respect:</strong> We treat every panelist as a vital contributor to the research process.</li>
+            <li><strong>Transparency:</strong> No hidden requirements—we tell you exactly what to expect.</li>
+        </ul>
+    </div>
+
+    <div style="text-align: center;">
+        <a href="signup.html" class="btn">Apply to Join Our National Panel</a>
+    </div>
 </div>
+
+<footer>
+    <p>&copy; 2026 MVG Recruiting | Nationwide Excellence</p>
+</footer>
+
 </body>
 </html>
